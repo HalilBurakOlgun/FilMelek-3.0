@@ -1,0 +1,102 @@
+.hero{
+    position: relative;
+}
+.banner-img{
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 50%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 50%);
+}
+.hero-caption{
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+}
+.caption-img{
+    width: 40%;
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+.hero-caption p{
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.doctor_buttons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.doctor_buttons .btn img{
+    width: 25px;
+}
+.doctor_buttons .btn{
+    border: 0;
+    outline: 0;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.doctor_buttons .btn.dark_btn{
+    color: #fff;
+    background: #6d6d6eb3;
+}
+.doctor_buttons .btn:hover{
+    background: #ffffffbf;
+    opacity: .6;
+    transition: .5s;
+}
+.doctor_buttons .btn.dark-btn:hover{
+    background: #6d6d6e66;
+    opacity: .6;
+    transition: .5s;
+}
+.more-cards{
+    padding-left: 6%;
+}
+@media (max-width: 1024px) {
+    .hero-caption .title-cards{
+        display: none;
+    }
+    .doctor_buttons{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 800px) {
+    .hero-caption{
+        padding-left: 4%;
+    }
+    .caption-img{
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    .hero-caption p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .btn img{
+        width: 20px;
+    }
+    .doctor_buttons .more-cards{
+        padding-left: 4%;
+    }
+}
+@media (max-width: 500px) {
+    .caption-img{
+        display: none;
+    }
+    .doctor_buttons .btn img{
+        width: 15px;
+    }
+    .doctor_buttons .btn{
+        padding: 4px 10px;
+        gap: 5px;
+        font-size: 10px;
+    }
+}
