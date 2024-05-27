@@ -10,11 +10,13 @@ const App = () => {
   return (
     <BrowserRouter>
       <AuthHandler />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/player/:id" element={<Player />} />
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/player/:id" element={<Player />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 };
@@ -30,7 +32,7 @@ const AuthHandler = () => {
         navigate("/login");
       }
     });
-  }, [navigate]);
+  }, []);
 
   return null;
 };
